@@ -62,7 +62,7 @@ const Connect = () => {
             <div className={styles.bg}>
               <img
                 srcSet="/images/content/connect-bg@2x.jpg 2x"
-                src="/images/content/connect-bg.jpg"
+                src="/images/content/connect-wallet-1-pic.svg"
                 alt="Connect wallet"
               />
             </div>
@@ -71,7 +71,7 @@ const Connect = () => {
               <div className={styles.text}>Powered by UI8.Wallet</div>
               <div className={styles.box}>
                 <div className={styles.code}>
-                  <img src="/images/content/qr-code.png" alt="Qr-code" />
+                  <img src="/images/content/connect-wallet-2-pic.svg" alt="Qr-code" />
                 </div>
               </div>
               <button className={cn("button-stroke", styles.button)}>
@@ -88,7 +88,7 @@ const Connect = () => {
               <div className={styles.preview}>
                 <img
                   srcSet="/images/content/connect-pic@2x.jpg 2x"
-                  src="/images/content/connect-pic.jpg"
+                  src="/images/content/connect-wallet-3-pic.svg.svg"
                   alt="Connect wallet"
                 />
               </div>
