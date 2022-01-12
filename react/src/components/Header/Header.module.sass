@@ -3,6 +3,7 @@
 .header
     position: relative
     z-index: 20
+    background: #6D3F5F
     padding: 20px 0
     border-bottom: 1px solid $neutrals6
     +m
@@ -24,7 +25,7 @@
     z-index: 12
     display: inline-block
     flex-shrink: 0
-    width: 128px
+    width: 53px
     margin-right: 32px
     +d
         margin-right: auto
@@ -66,7 +67,6 @@
 .nav
     display: flex
     margin-right: auto
-    border-left: 2px solid $neutrals6
     +d
         display: none
     +m
@@ -81,7 +81,7 @@
     margin-left: 32px
     +dm-sans
     line-height: 40px
-    color: $neutrals4
+    color: #fff
     transition: color .2s
     +m
         margin-left: 0
@@ -89,7 +89,7 @@
         line-height: 64px
     &:hover,
     &.active
-        color: $blue
+        color: $pink-purple
     &:nth-child(n+3)
         display: none
         +m
@@ -111,7 +111,7 @@
     width: 100%
     height: 40px
     padding: 0 42px 0 16px
-    background: none
+    background: #fff
     border: 2px solid $neutrals6
     border-radius: 8px
     +poppins
@@ -136,7 +136,7 @@
         transition: fill .2s
     &:hover
         svg
-            fill: $blue
+            fill: $pink-purple
 
 .notification
     margin-right: 24px
