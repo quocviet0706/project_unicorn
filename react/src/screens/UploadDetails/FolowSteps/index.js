@@ -38,7 +38,7 @@ const FolowSteps = ({ className }) => {
             Start now
           </button>
         </div>
-        <div className={styles.item}>
+        {/* <div className={styles.item}>
           <div className={styles.head}>
             <div className={styles.icon}>
               <LoaderCircle className={styles.loader} />
@@ -53,8 +53,8 @@ const FolowSteps = ({ className }) => {
           <button className={cn("button loading", styles.button)}>
             <Loader className={styles.loader} color="white" />
           </button>
-        </div>
-        <div className={cn(styles.item, styles.error)}>
+        </div> */}
+        {/* <div className={cn(styles.item, styles.error)}>
           <div className={styles.head}>
             <div className={styles.icon}>
               <Icon name="pencil" size="24" />
@@ -67,7 +67,7 @@ const FolowSteps = ({ className }) => {
             </div>
           </div>
           <button className={cn("button error", styles.button)}>Failed</button>
-        </div>
+        </div> */}
         <div className={styles.item}>
           <div className={styles.head}>
             <div className={styles.icon}>

@@ -7,7 +7,7 @@ import Icon from "../../../components/Icon";
 import Player from "../../../components/Player";
 import Modal from "../../../components/Modal";
 import Connect from "../../../components/Connect";
-// import Bid from "../../../components/Bid";
+import Bid from "../../../components/Bid";
 
 const items = [
   {
@@ -162,7 +162,7 @@ const Hero = () => {
         visible={visibleModalBid}
         onClose={() => setVisibleModalBid(false)}
       >
-        <Connect />
+        <Bid />
       </Modal>
     </>
   );

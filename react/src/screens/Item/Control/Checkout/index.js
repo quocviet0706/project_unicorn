@@ -39,7 +39,7 @@ const Checkout = ({ className }) => {
           </div>
         ))}
       </div>
-      <div className={styles.attention}>
+      {/* <div className={styles.attention}>
         <div className={styles.preview}>
           <Icon name="info-circle" size="32" />
         </div>
@@ -71,7 +71,7 @@ const Checkout = ({ className }) => {
         <div className={styles.avatar}>
           <img src="/images/content/avatar-3.jpg" alt="Avatar" />
         </div>
-      </div>
+      </div> */}
       <div className={styles.btns}>
         <button className={cn("button", styles.button)}>
           I understand, continue
