@@ -19,7 +19,7 @@ const User = ({ className, item }) => {
     <>
       <div className={cn(styles.user, className)}>
         <div className={styles.avatar}>
-          <img src="/images/content/avatar-big.jpg" alt="Avatar" />
+          <img src="/images/content/avatar_profile.svg" alt="Avatar" />
         </div>
         <div className={styles.name}>Enrico Cole</div>
         <div className={styles.code}>
