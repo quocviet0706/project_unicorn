@@ -2,19 +2,20 @@
 
 .footer
     border-top: 1px solid $neutrals6
+    background: #000000
     +dark
         border-color: $neutrals3
 
 .row
     display: flex
     padding: 80px 0 48px
-    border-bottom: 1px solid $neutrals6
+    border-bottom: 1px solid $white
     +t
         display: block
     +m
         padding: 64px 0 48px
     +dark
-        border-color: $neutrals3
+        border-color: $white
 
 .col
     &:first-child
@@ -58,6 +59,7 @@
     
 .info
     max-width: 256px
+    color: #EC4C93
     +body-1
     +d
         font-size: 16px
@@ -74,17 +76,20 @@
 
 .details
     margin-right: 16px
+    color: #fff
     +caption-2
     +m
         margin-right: 10px
 
 .category
     margin-bottom: 40px
+    color: #EC4C93
     +body-bold-2
     +t
         margin-block-end: 24px
 
 .text
+    color: $neutrals6
     margin-bottom: 24px
 
 .foot
@@ -97,17 +102,18 @@
         padding: 24px 0 32px
 
 .copyright
-    color: $neutrals4
+    color: $neutrals6
     +m
         text-align: center
 
 .note
+    color: $neutrals6
     +m
         display: none
     a
         margin-left: 16px 
         font-weight: 600
-        color: $blue
+        color: $pink-purple
         transition: color .2s
         &:hover
-            color: darken($blue, 10)   
+            color: darken($pink-purple, 10)   

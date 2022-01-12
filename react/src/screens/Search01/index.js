@@ -111,7 +111,7 @@ const Search = () => {
                         borderRadius: "4px",
                         background: getTrackBackground({
                           values,
-                          colors: ["#3772FF", "#E6E8EC"],
+                          colors: ["#A92E71", "#E6E8EC"],
                           min: MIN,
                           max: MAX,
                         }),
@@ -130,7 +130,7 @@ const Search = () => {
                       height: "24px",
                       width: "24px",
                       borderRadius: "50%",
-                      backgroundColor: "#3772FF",
+                      backgroundColor: "#A92E71",
                       border: "4px solid #FCFCFD",
                       display: "flex",
                       justifyContent: "center",

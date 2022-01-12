@@ -6,7 +6,7 @@
     align-items: center
     min-height: 800px
     padding: 80px 0
-    border-top: 1px solid $neutrals6
+    background: #F4F5F6
     +d
         min-height: 576px
     +m
@@ -52,9 +52,18 @@
         width: 100%
     &:not(:last-child)
         margin-right: 16px
+        background: #EC4C93
         +m
             margin: 0 0 16px
-    
+        &:hover
+            color: $pink-purple
+    &:not(:first-child)
+       box-shadow: 0 0 0 2px #EC4C93 inset
+       &:hover
+           background: #EC4C93
+           color: $pink-purple
+                
+
 .gallery
     position: absolute
     top: 50%
