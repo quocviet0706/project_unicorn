@@ -88,7 +88,7 @@ const Connect = () => {
               <div className={styles.preview}>
                 <img
                   srcSet="/images/content/connect-pic@2x.jpg 2x"
-                  src="/images/content/connect-wallet-3-pic.svg.svg"
+                  src="/images/content/connect-wallet-3-pic.svg"
                   alt="Connect wallet"
                 />
               </div>
