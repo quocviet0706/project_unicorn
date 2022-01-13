@@ -22,7 +22,7 @@ const Preview = ({ className, onClose }) => {
           <div className={styles.link}>
             <div className={styles.body}>
               <div className={styles.line}>
-                <div className={styles.title}>Black Golden Tiger</div>
+                <div className={styles.title}>Amazing digital art</div>
                 <div className={styles.price}>2.45 ETH</div>
               </div>
               <div className={styles.line}>
