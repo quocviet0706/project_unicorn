@@ -14,8 +14,8 @@ const Preview = ({ className, onClose }) => {
         <div className={styles.card}>
           <div className={styles.preview}>
             <img
-              srcSet="/images/content/card-pic-6.jpg"
-              src="/images/content/card-pic-6@2x.jpg"
+              srcSet="/images/CreateItem/preview.svg"
+              src="/images/CreateItem/preview.svg"
               alt="Card"
             />
           </div>
@@ -28,13 +28,7 @@ const Preview = ({ className, onClose }) => {
               <div className={styles.line}>
                 <div className={styles.users}>
                   <div className={styles.avatar}>
-                    <img src="/images/content/avatar-1.jpg" alt="Avatar" />
-                  </div>
-                  <div className={styles.avatar}>
-                    <img src="/images/content/avatar-3.jpg" alt="Avatar" />
-                  </div>
-                  <div className={styles.avatar}>
-                    <img src="/images/content/avatar-4.jpg" alt="Avatar" />
+                    <img src="/images/discover/icon-avatar-discover.svg" alt="Avatar" />
                   </div>
                 </div>
                 <div className={styles.counter}>3 in stock</div>

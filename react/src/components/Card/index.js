@@ -28,7 +28,6 @@ const Card = ({ className, item }) => {
           </button>
           <button className={cn("button-small", styles.button)}>
             <span>Place a bid</span>
-            <Icon name="scatter-up" size="16" />
           </button>
         </div>
       </div>

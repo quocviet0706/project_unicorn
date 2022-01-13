@@ -7,7 +7,7 @@ import Icon from "../../../components/Icon";
 import Player from "../../../components/Player";
 import Modal from "../../../components/Modal";
 import Connect from "../../../components/Connect";
-// import Bid from "../../../components/Bid";
+import Bid from "../../../components/Bid";
 
 const items = [
   {
@@ -15,8 +15,8 @@ const items = [
     creator: "Enrico Cole",
     currency: "1.00 ETH",
     price: "$3,618.36",
-    avatar: "/images/content/avatar-creator.jpg",
-    image: "/images/content/video-preview.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/the-create-net-work-lg.svg",
     image2x: "/images/content/video-preview@2x.jpg",
   },
   {
@@ -24,8 +24,8 @@ const items = [
     creator: "Enrico Cole",
     currency: "2.00 ETH",
     price: "$2,477.92",
-    avatar: "/images/content/avatar-creator.jpg",
-    image: "/images/content/video-preview.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/the-create-net-work-lg.svg",
     image2x: "/images/content/video-preview@2x.jpg",
   },
   {
@@ -33,8 +33,8 @@ const items = [
     creator: "Enrico Cole",
     currency: "1.00 ETH",
     price: "$3,618.36",
-    avatar: "/images/content/avatar-creator.jpg",
-    image: "/images/content/video-preview.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/the-create-net-work-lg.svg",
     image2x: "/images/content/video-preview@2x.jpg",
   },
   {
@@ -42,8 +42,8 @@ const items = [
     creator: "Enrico Cole",
     currency: "2.00 ETH",
     price: "$2,477.92",
-    avatar: "/images/content/avatar-creator.jpg",
-    image: "/images/content/video-preview.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/the-create-net-work-lg.svg",
     image2x: "/images/content/video-preview@2x.jpg",
   },
 ];
@@ -162,7 +162,7 @@ const Hero = () => {
         visible={visibleModalBid}
         onClose={() => setVisibleModalBid(false)}
       >
-        <Connect />
+        <Bid />
       </Modal>
     </>
   );

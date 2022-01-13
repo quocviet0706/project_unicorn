@@ -11,17 +11,17 @@ const items = [
     counter: "18 in stock",
     price: "1.125 ETH",
     url: "/item",
-    avatar: "/images/content/avatar-1.jpg",
-    image: "/images/content/selection-pic-1.jpg",
-    image2x: "/images/content/selection-pic-1@2x.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/img-creator-01.svg",
+    image2x: "/images/home/img-creator-01@2x.svg",
   },
   {
     title: "ETH never die",
     content: "1 of 12",
     price: "0.27 ETH",
     url: "/item",
-    avatar: "/images/content/avatar-4.jpg",
-    image: "/images/content/selection-pic-2.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/img-creator-02.svg",
     image2x: "/images/content/selection-pic-2@2x.jpg",
   },
   {
@@ -29,8 +29,8 @@ const items = [
     content: "1 of 3",
     price: "0.27 ETH",
     url: "/item",
-    avatar: "/images/content/avatar-3.jpg",
-    image: "/images/content/selection-pic-1.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/img-creator-03.svg",
     image2x: "/images/content/selection-pic-1@2x.jpg",
   },
   {
@@ -38,8 +38,8 @@ const items = [
     content: "1 of 4",
     price: "0.27 ETH",
     url: "/item",
-    avatar: "/images/content/avatar-4.jpg",
-    image: "/images/content/selection-pic-3.jpg",
+    avatar: "/images/home/avatar-women-red.svg",
+    image: "/images/home/img-creator-04.svg",
     image2x: "/images/content/selection-pic-3@2x.jpg",
   },
 ];
@@ -49,25 +49,25 @@ const users = [
     name: "Payton Harris",
     price: "<span>2.456</span> ETH",
     counter: "6",
-    avatar: "/images/content/avatar-1.jpg",
+    avatar: "/images/home/img-avartar-01.svg",
   },
   {
     name: "Anita Bins",
     price: "<span>2.456</span> ETH",
     counter: "2",
-    avatar: "/images/content/avatar-2.jpg",
+    avatar: "/images/home/img-avartar-02.svg",
   },
   {
     name: "Joana Wuckert",
     price: "<span>2.456</span> ETH",
     counter: "3",
-    avatar: "/images/content/avatar-3.jpg",
+    avatar: "/images/home/img-avartar-03.svg",
   },
   {
     name: "Lorena Ledner",
     price: "<span>2.456</span> ETH",
     counter: "4",
-    avatar: "/images/content/avatar-4.jpg",
+    avatar: "/images/home/img-avartar-04.svg",
   },
 ];
 
@@ -83,7 +83,7 @@ const Selection = () => {
                   <Link className={styles.card} to={x.url} key={index}>
                     <div className={styles.preview}>
                       <img
-                        srcSet={`${x.image2x} 2x`}
+                        // srcSet={`${x.image2x} 2x`}
                         src={x.image}
                         alt="Selection"
                       />
