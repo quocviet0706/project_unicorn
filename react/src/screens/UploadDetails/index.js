@@ -41,6 +41,7 @@ const Upload = () => {
   const [visibleModal, setVisibleModal] = useState(false);
 
   const [visiblePreview, setVisiblePreview] = useState(false);
+  const [sigle, setSigle] = useState(true);
 
   return (
     <>
@@ -49,12 +50,19 @@ const Upload = () => {
           <div className={styles.wrapper}>
             <div className={styles.head}>
               <div className={cn("h2", styles.title)}>
-                Create single collectible
+                {
+                  sigle ? <p>Create single collectible</p> : <p>Create multiple collectible</p>
+                }
               </div>
               <button
                 className={cn("button-stroke button-small", styles.button)}
               >
-                Switch to Multiple
+                <div
+                  onClick={() => setSigle(!sigle)}
+                  className="switch_multiple"
+                >
+                  {sigle ? <p>Swich to multiple</p> : <p>Swich to single</p>}
+                </div>
               </button>
             </div>
             <form className={styles.form} action="">

@@ -25,8 +25,8 @@ const users = [
     avatar: "/images/discover/icon-avatar-discover.svg",
   },
   {
-    name: "Selina Mayert",
-    position: "Creator",
+    name: "Raquel Will",
+    position: "Owner",
     avatar: "/images/discover/icon-avatar-discover.svg",
   },
 ];
