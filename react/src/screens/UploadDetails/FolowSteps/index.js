@@ -20,7 +20,7 @@ const FolowSteps = ({ className }) => {
               <div className={styles.text}>Call contract method</div>
             </div>
           </div>
-          <button className={cn("button done", styles.button)}>Done</button>
+          <button className={cn("button done", styles.button)}>Start now</button>
         </div>
         <div className={styles.item}>
           <div className={styles.head}>
