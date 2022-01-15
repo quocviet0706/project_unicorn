@@ -20,7 +20,7 @@ const FolowSteps = ({ className }) => {
               <div className={styles.text}>Send transaction with your wallet</div>
             </div>
           </div>
-          <button className={cn("button done", styles.button)}>Start now</button>
+          <button className={cn("button", styles.button)}>Start now</button>
         </div>
         <div className={styles.item}>
           <div className={styles.head}>
@@ -50,7 +50,7 @@ const FolowSteps = ({ className }) => {
               </div>
             </div>
           </div>
-          <button className={cn("button", styles.button)}>Start now</button>
+          <button className={cn("button disabled js-popup-close", styles.button)}>Start now</button>
         </div>
       </div>
     </div>
