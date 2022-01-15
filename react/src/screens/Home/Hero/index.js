@@ -17,7 +17,7 @@ const items = [
     price: "$3,618.36",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "Marco carrillo®",
@@ -26,7 +26,7 @@ const items = [
     price: "$2,477.92",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "the creator network®",
@@ -35,7 +35,7 @@ const items = [
     price: "$3,618.36",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "Marco carrillo®",
@@ -44,7 +44,7 @@ const items = [
     price: "$2,477.92",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
 ];
 
@@ -162,7 +162,7 @@ const Hero = () => {
         visible={visibleModalBid}
         onClose={() => setVisibleModalBid(false)}
       >
-        <Connect />
+        <Bid />
       </Modal>
     </>
   );
