@@ -7,6 +7,7 @@ import Accept from "./Accept";
 import PutSale from "./PutSale";
 import SuccessfullyPurchased from "./SuccessfullyPurchased";
 import Modal from "../../../components/Modal";
+import FolowSteps from "../../../screens/UploadDetails/FolowSteps";
 
 const Control = ({ className }) => {
   const [visibleModalPurchase, setVisibleModalPurchase] = useState(false);
