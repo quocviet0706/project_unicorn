@@ -18,7 +18,7 @@ const Transfer = ({ className }) => {
         />
       </div>
       <div className={styles.btns}>
-        <button className={cn("button", styles.button)}>Continue</button>
+        <button className={cn("button", styles.button)}>Changer price</button>
         <button className={cn("button-stroke", styles.button)}>Cancel</button>
       </div>
     </div>

@@ -15,13 +15,14 @@ const menu = [
     color: "#3772FF",
   },
   {
-    title: "MyEtherWallet",
+    title: "Coinbase Wallet",
     color: "#45B26B",
   },
   {
-    title: "Wallet Connect",
+    title: "Coinbase Wallet",
     color: "#EF466F",
   },
+  
 ];
 
 const Connect = () => {
@@ -41,7 +42,8 @@ const Connect = () => {
           <div className={styles.menu}>
             {menu.map((x, index) => (
               <div
-                className={cn({ [styles.active]: index === 1 }, styles.link)}
+                className={cn({ [styles.active]: index === conditions }, styles.link)}
+                onClick={() =>  conditions || conditions === 0 ? setConditions(false) : setConditions(index)}
                 key={index}
               >
                 <div
@@ -71,7 +73,10 @@ const Connect = () => {
               <div className={styles.text}>Powered by UI8.Wallet</div>
               <div className={styles.box}>
                 <div className={styles.code}>
-                  <img src="/images/content/connect-wallet-2-pic.svg" alt="Qr-code" />
+                  <img
+                    src="/images/content/connect-wallet-2-pic.svg"
+                    alt="Qr-code"
+                  />
                 </div>
               </div>
               <button className={cn("button-stroke", styles.button)}>
