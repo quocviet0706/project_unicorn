@@ -162,7 +162,7 @@ const Hero = () => {
         visible={visibleModalBid}
         onClose={() => setVisibleModalBid(false)}
       >
-        <Bid />
+        <Connect />
       </Modal>
     </>
   );
