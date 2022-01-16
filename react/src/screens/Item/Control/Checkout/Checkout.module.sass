@@ -1,5 +1,30 @@
 @import ../../../../styles/helpers
-
+.box
+    position: absolute
+    left: 50%
+    bottom: calc(0%)
+    z-index: 2
+    width: 100%
+    height:100%
+    transform: translateX(-50%)
+    padding: 32px 30px
+    background: $neutrals8
+    border: 1px solid $neutrals6
+    border-radius: 16px
+    visibility: hidden
+    +dark
+        background: $neutrals2
+        border-color: $neutrals3
+    &.active
+        visibility: visible
+        opacity: 1
+    .line
+        margin-top:30px
+    .details
+        margin:15px
+        flex-grow: 1
+    .btns
+        margin-top:50px
 .title
     margin-bottom: 32px
 
@@ -57,9 +82,6 @@
     margin-right: 16px
     svg
         fill: $pink
-    
-.details
-    flex-grow: 1
 
 .subtitle
     +body-bold-2
