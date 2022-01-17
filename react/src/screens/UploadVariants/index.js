@@ -22,7 +22,7 @@ const items = [
     image2x: "/images/UploadItem/single.svg",
   },
   {
-    url: "/upload-details",
+    url: "/upload-details-mutiple",
     buttonText: "Create Multiple",
     image: "/images/UploadItem/mutiple.svg",
     image2x: "/images/UploadItem/mutiple.svg",

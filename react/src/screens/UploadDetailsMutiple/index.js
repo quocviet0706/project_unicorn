@@ -10,6 +10,7 @@ import Modal from "../../components/Modal";
 import Preview from "./Preview";
 import Cards from "./Cards";
 import FolowSteps from "./FolowSteps";
+import FolowSteps_Mutiple from "./FolowSteps_mutiple";
 
 const royaltiesOptions = ["10%", "20%", "30%"];
 
@@ -32,7 +33,7 @@ const items = [
   },
 ];
 
-const Upload = () => {
+const Upload_Mutiple = () => {
   const [royalties, setRoyalties] = useState(royaltiesOptions[0]);
   const [sale, setSale] = useState(true);
   const [price, setPrice] = useState(false);
@@ -50,17 +51,18 @@ const Upload = () => {
           <div className={styles.wrapper}>
             <div className={styles.head}>
               <div className={cn("h2", styles.title)}>
-                Create single collectible
+                
+                  Create multiple collectible
                 
               </div>
               <a
-                className={cn("button-stroke button-small", styles.button)} href="/upload-details-mutiple"
+                className={cn("button-stroke button-small", styles.button)} href="/upload-details"
               >
                 <div
                   onClick={() => setSigle(!sigle)}
                   className="switch_multiple"
                 >
-                  Swich to multiple
+                  Swich to single
                 </div>
               </a>
             </div>
@@ -201,10 +203,10 @@ const Upload = () => {
         </div>
       </div>
       <Modal visible={visibleModal} onClose={() => setVisibleModal(false)}>
-        <FolowSteps className={styles.steps} />
+        <FolowSteps_Mutiple className={styles.steps} />
       </Modal>
     </>
   );
 };
 
-export default Upload;
+export default Upload_Mutiple;

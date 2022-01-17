@@ -4,6 +4,7 @@ import Page from "./components/Page";
 import Home from "./screens/Home";
 import UploadVariants from "./screens/UploadVariants";
 import UploadDetails from "./screens/UploadDetails";
+import UploadDetailsMutiple from "./screens/UploadDetailsMutiple";
 import ConnectWallet from "./screens/ConnectWallet";
 import Faq from "./screens/Faq";
 import Activity from "./screens/Activity";
@@ -42,6 +43,15 @@ function App() {
           render={() => (
             <Page>
               <UploadDetails />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/upload-details-mutiple"
+          render={() => (
+            <Page>
+              <UploadDetailsMutiple />
             </Page>
           )}
         />
