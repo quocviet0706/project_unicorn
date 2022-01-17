@@ -7,11 +7,11 @@
     padding: 20px 0
     border-bottom: 1px solid $neutrals6
     +m
-        padding: 48px 0 24px
+        padding: 24px 0 24px
         border: none
     +dark
         border-color: $neutrals3
-        
+
 .container
     display: flex
     align-items: center
@@ -31,7 +31,7 @@
         margin-right: auto
     img
         width: 100%
-    
+
 .wrapper
     display: flex
     align-items: center
@@ -58,6 +58,9 @@
         &.active
             visibility: visible
             opacity: 1
+        &.active + div
+            svg
+                fill: $pink-purple
     .button
         display: none
         +m
@@ -87,6 +90,7 @@
         margin-left: 0
         font-size: 24px
         line-height: 64px
+        color: #777E90
     &:hover,
     &.active
         color: $pink-purple
