@@ -7,7 +7,7 @@ import Icon from "../../../components/Icon";
 import Player from "../../../components/Player";
 import Modal from "../../../components/Modal";
 import Connect from "../../../components/Connect";
-// import Bid from "../../../components/Bid";
+import Bid from "../../../components/Bid";
 
 const items = [
   {
@@ -17,7 +17,7 @@ const items = [
     price: "$3,618.36",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "Marco carrillo®",
@@ -26,7 +26,7 @@ const items = [
     price: "$2,477.92",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "the creator network®",
@@ -35,7 +35,7 @@ const items = [
     price: "$3,618.36",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
   {
     title: "Marco carrillo®",
@@ -44,7 +44,7 @@ const items = [
     price: "$2,477.92",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/the-create-net-work-lg.svg",
-    image2x: "/images/content/video-preview@2x.jpg",
+    image2x: "/images/home/the-create-net-work-lg.svg",
   },
 ];
 

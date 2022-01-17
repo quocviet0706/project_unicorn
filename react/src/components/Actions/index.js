@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import cn from "classnames";
 import OutsideClickHandler from "react-outside-click-handler";
 import styles from "./Actions.module.sass";
+import Changer from "../Changer";
 import Transfer from "../Transfer";
 import RemoveSale from "../RemoveSale";
 import Burn from "../Burn";
@@ -12,6 +13,7 @@ import Modal from "../../components/Modal";
 const Actions = ({ className }) => {
   const [visible, setVisible] = useState(false);
   const [visibleModalTransfer, setVisibleModalTransfer] = useState(false);
+  const [visibleModalChanger, setVisibleModalChanger] = useState(false);
   const [visibleModalRemoveSale, setVisibleModalRemoveSale] = useState(false);
   const [visibleModalBurn, setVisibleModalBurn] = useState(false);
   const [visibleModalReport, setVisibleModalReport] = useState(false);
@@ -20,7 +22,7 @@ const Actions = ({ className }) => {
     {
       title: "Change price",
       icon: "coin",
-      action: () => console.log("coin"),
+      action: () => setVisibleModalChanger(true),
     },
     {
       title: "Transfer token",
@@ -68,6 +70,12 @@ const Actions = ({ className }) => {
           </div>
         </div>
       </OutsideClickHandler>
+      <Modal
+        visible={visibleModalChanger}
+        onClose={() => setVisibleModalChanger(false)}
+      >
+        <Changer />
+      </Modal>
       <Modal
         visible={visibleModalTransfer}
         onClose={() => setVisibleModalTransfer(false)}

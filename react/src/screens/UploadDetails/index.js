@@ -41,6 +41,7 @@ const Upload = () => {
   const [visibleModal, setVisibleModal] = useState(false);
 
   const [visiblePreview, setVisiblePreview] = useState(false);
+  const [sigle, setSigle] = useState(true);
 
   return (
     <>
@@ -50,12 +51,18 @@ const Upload = () => {
             <div className={styles.head}>
               <div className={cn("h2", styles.title)}>
                 Create single collectible
+                
               </div>
-              <button
-                className={cn("button-stroke button-small", styles.button)}
+              <a
+                className={cn("button-stroke button-small", styles.button)} href="/upload-details-mutiple"
               >
-                Switch to Multiple
-              </button>
+                <div
+                  onClick={() => setSigle(!sigle)}
+                  className="switch_multiple"
+                >
+                  Swich to multiple
+                </div>
+              </a>
             </div>
             <form className={styles.form} action="">
               <div className={styles.list}>

@@ -13,7 +13,7 @@ const items = [
     url: "/item",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/img-creator-01.svg",
-    image2x: "/images/home/img-creator-01@2x.svg",
+    image2x: "/images/home/img-creator-01.svg",
   },
   {
     title: "ETH never die",
@@ -22,7 +22,7 @@ const items = [
     url: "/item",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/img-creator-02.svg",
-    image2x: "/images/content/selection-pic-2@2x.jpg",
+    image2x: "/images/home/img-creator-02.svg",
   },
   {
     title: "Future coming soon",
@@ -31,7 +31,7 @@ const items = [
     url: "/item",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/img-creator-03.svg",
-    image2x: "/images/content/selection-pic-1@2x.jpg",
+    image2x: "/images/home/img-creator-03.svg",
   },
   {
     title: "Elon Musk silver coin 3d print",
@@ -40,7 +40,7 @@ const items = [
     url: "/item",
     avatar: "/images/home/avatar-women-red.svg",
     image: "/images/home/img-creator-04.svg",
-    image2x: "/images/content/selection-pic-3@2x.jpg",
+    image2x: "/images/home/img-creator-04.svg",
   },
 ];
 

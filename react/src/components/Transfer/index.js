@@ -7,7 +7,7 @@ const Transfer = ({ className }) => {
     <div className={cn(className, styles.transfer)}>
       <div className={cn("h4", styles.title)}>Transfer token</div>
       <div className={styles.text}>
-        You can transfer tokens from your address to another
+        You can transfer tokens from your address to another123
       </div>
       <div className={styles.info}>Receiver address</div>
       <div className={styles.field}>

@@ -50,6 +50,8 @@
 
 .category
     margin: 8px 0 0 8px
+    &:last-child
+        background: #A92E71
 
 .options
     position: absolute
@@ -72,7 +74,10 @@
     line-height: 30px
     &:not(:last-child)
         margin-right: 8px
-    
+    &:first-child
+        box-shadow: inset 0 0 0 2px #A92E71
+        color: #A92E71
+
 .counter
     +button-1
     color: $neutrals4
@@ -118,7 +123,7 @@
             color: $neutrals2
     &:not(:last-child)
         margin-right: 8px
-    
+
 .users
     margin-bottom: auto
 

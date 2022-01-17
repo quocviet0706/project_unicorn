@@ -18,14 +18,14 @@ const items = [
   {
     url: "/upload-details",
     buttonText: "Create Single",
-    image: "/images/content/upload-pic-1.jpg",
-    image2x: "/images/content/upload-pic-1@2x.jpg",
+    image: "/images/UploadItem/single.svg",
+    image2x: "/images/UploadItem/single.svg",
   },
   {
-    url: "/upload-details",
+    url: "/upload-details-mutiple",
     buttonText: "Create Multiple",
-    image: "/images/content/upload-pic-2.jpg",
-    image2x: "/images/content/upload-pic-2@2x.jpg",
+    image: "/images/UploadItem/mutiple.svg",
+    image2x: "/images/UploadItem/mutiple.svg",
   },
 ];
 
