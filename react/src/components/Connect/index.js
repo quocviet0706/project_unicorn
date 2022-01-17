@@ -4,6 +4,10 @@ import styles from "./Connect.module.sass";
 import Icon from "../Icon";
 
 const Connect = ({ className }) => {
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  }
   return (
     <div className={cn(className, styles.connect)}>
       <div className={styles.icon}>
@@ -15,7 +19,7 @@ const Connect = ({ className }) => {
       </div>
       <div className={styles.btns}>
         <a className={cn("button", styles.button)} href="/connect-wallet">Connect walle</a>
-        <button className={cn("button-stroke", styles.button)}>Cancel</button>
+        <button className={cn("button-stroke", styles.button)} onClick={() => cancel()}>Cancel</button>
       </div>
     </div>
   );

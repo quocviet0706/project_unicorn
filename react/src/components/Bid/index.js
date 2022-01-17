@@ -25,6 +25,14 @@ const items = [
 
 const Bid = ({ className }) => {
   const [visibleModalBid, setVisibleModalBid] = useState(false);
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  }
+  const hide = () => {
+    // document.querySelector("body").style = "";
+    document.querySelectorAll("#modal")[0].style.display = "none";
+  }
   return (
     <>
       <div className={cn(className, styles.checkout)}>
@@ -45,11 +53,11 @@ const Bid = ({ className }) => {
         <div className={styles.btns}>
           <button className={cn("button", styles.button)}
             className={cn("button-stroke", styles.button)}
-            onClick={() => setVisibleModalBid(true)}
+            onClick={() => {setVisibleModalBid(true); hide()}}
           >
             Place a bid
           </button>
-          <button className={cn("button-stroke", styles.button)}>Cancel</button>
+          <button className={cn("button-stroke", styles.button)} onClick={() => cancel()}>Cancel</button>
         </div>
       </div>
       <Modal

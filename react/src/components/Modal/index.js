@@ -42,7 +42,7 @@ const Modal = ({
     visible && (
       <div className={styles.modal} id="modal">
         <div className={cn(styles.outer, outerClassName)}>
-          <OutsideClickHandler>
+          <OutsideClickHandler onOutsideClick={onClose}>
             <div className={cn(styles.container, containerClassName)}>
               {children}
               <button className={styles.close} onClick={onClose}>
