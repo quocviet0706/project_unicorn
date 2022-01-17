@@ -5,20 +5,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-1.jpg",
-    image2x: "/images/content/card-pic-1@2x.jpg",
+    image: "/images/discover/img-discover-01.svg",
+    image2x: "/images/discover/img-discover-01.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-3.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -28,17 +22,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-2.jpg",
-    image2x: "/images/content/card-pic-2@2x.jpg",
+    image: "/images/discover/img-discover-02.svg",
+    image2x: "/images/discover/img-discover-02.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -48,20 +39,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-3.jpg",
-    image2x: "/images/content/card-pic-3@2x.jpg",
+    image: "/images/discover/img-discover-03.svg",
+    image2x: "/images/discover/img-discover-03.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-3.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -71,17 +56,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-4.jpg",
-    image2x: "/images/content/card-pic-4@2x.jpg",
+    image: "/images/discover/img-discover-04.svg",
+    image2x: "/images/discover/img-discover-04.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -91,20 +73,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-5.jpg",
-    image2x: "/images/content/card-pic-5@2x.jpg",
+    image: "/images/discover/img-discover-03.svg",
+    image2x: "/images/discover/img-discover-03.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-3.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -114,17 +90,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-6.jpg",
-    image2x: "/images/content/card-pic-6@2x.jpg",
+    image: "/images/discover/img-discover-01.svg",
+    image2x: "/images/discover/img-discover-01.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -134,17 +107,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-7.jpg",
-    image2x: "/images/content/card-pic-7@2x.jpg",
+    image: "/images/discover/img-discover-02.svg",
+    image2x: "/images/discover/img-discover-02.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },
@@ -154,17 +124,14 @@ export const bids = [
     highestBid: "0.001 ETH",
     counter: "3 in stock",
     bid: 'New bid <span role="img" aria-label="fire">🔥</span>',
-    image: "/images/content/card-pic-1.jpg",
-    image2x: "/images/content/card-pic-1@2x.jpg",
+    image: "/images/discover/img-discover-04.svg",
+    image2x: "/images/discover/img-discover-04.svg",
     category: "green",
     categoryText: "purchasing !",
     url: "/",
     users: [
       {
-        avatar: "/images/content/avatar-1.jpg",
-      },
-      {
-        avatar: "/images/content/avatar-4.jpg",
+        avatar: "/images/discover/icon-avatar-discover.svg",
       },
     ],
   },

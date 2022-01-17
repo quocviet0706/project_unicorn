@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./Bid.module.sass";
+import Modal from "../../components/Modal";
+import FolowSteps from "../../screens/UploadDetails/FolowSteps_PlaceBid";
 
 const items = [
   {
@@ -22,27 +24,41 @@ const items = [
 ];
 
 const Bid = ({ className }) => {
+  const [visibleModalBid, setVisibleModalBid] = useState(false);
   return (
-    <div className={cn(className, styles.checkout)}>
-      <div className={cn("h4", styles.title)}>Place a bid</div>
-      <div className={styles.info}>
-        You are about to purchase <strong>C O I N Z</strong> from{" "}
-        <strong>UI8</strong>
+    <>
+      <div className={cn(className, styles.checkout)}>
+        <div className={cn("h4", styles.title)}>Place a bid</div>
+        <div className={styles.info}>
+          You are about to purchase <strong>C O I N Z</strong> from{" "}
+          <strong>UI8</strong>
+        </div>
+        <div className={styles.stage}>Your bid</div>
+        <div className={styles.table}>
+          {items.map((x, index) => (
+            <div className={styles.row} key={index}>
+              <div className={styles.col}>{x.title}</div>
+              <div className={styles.col}>{x.value}</div>
+            </div>
+          ))}
+        </div>
+        <div className={styles.btns}>
+          <button className={cn("button", styles.button)}
+            className={cn("button-stroke", styles.button)}
+            onClick={() => setVisibleModalBid(true)}
+          >
+            Place a bid
+          </button>
+          <button className={cn("button-stroke", styles.button)}>Cancel</button>
+        </div>
       </div>
-      <div className={styles.stage}>Your bid</div>
-      <div className={styles.table}>
-        {items.map((x, index) => (
-          <div className={styles.row} key={index}>
-            <div className={styles.col}>{x.title}</div>
-            <div className={styles.col}>{x.value}</div>
-          </div>
-        ))}
-      </div>
-      <div className={styles.btns}>
-        <button className={cn("button", styles.button)}>Place a bid</button>
-        <button className={cn("button-stroke", styles.button)}>Cancel</button>
-      </div>
-    </div>
+      <Modal
+        visible={visibleModalBid}
+        onClose={() => setVisibleModalBid(false)}
+      >
+        <FolowSteps />
+      </Modal>
+    </>
   );
 };
 

@@ -4,21 +4,21 @@
     align-items: center
     height: 48px
     padding: 0 24px
-    background: $blue
+    background: $pink-purple
     border-radius: 24px
     +button-1
     text-align: center
     color: $neutrals8
     transition: all .2s
     &:hover
-        background: darken($blue, 10)
+        background: darken($pink-purple, 10)
     &.disabled
         opacity: .5
         pointer-events: none
     &.done
-        background: $neutrals5
+        background: $pink-purple
     &.loading
-        background: darken($blue, 15)
+        background: darken($pink-purple, 15)
         font-size: 0
     &.error
         box-shadow: 0 0 0 2px $neutrals6 inset
@@ -37,14 +37,14 @@
 
 .button-stroke
     background: none
-    box-shadow: 0 0 0 2px $neutrals6 inset
+    box-shadow: 0 0 0 2px #E5E5E5 inset
     color: $neutrals2
     svg
         fill: $neutrals2
         transition: fill .2s
     &:hover
-        background: $blue
-        box-shadow: 0 0 0 2px $blue inset
+        background: $pink-purple
+        box-shadow: 0 0 0 2px #a92e71 inset
         color: $neutrals8
         svg
             fill: $neutrals8
@@ -54,7 +54,7 @@
         svg
             fill: $neutrals8
         &:hover
-            box-shadow: 0 0 0 2px $blue inset
+            box-shadow: 0 0 0 2px #a92e71 inset
     
 .button-pink
     background: $pink
@@ -66,6 +66,11 @@
     border-radius: 20px
     padding: 0 16px
     font-size: 14px
+    &:hover
+        background: $pink-purple
+
+.Header_button__1bURA
+    background: #EC4C93    
 
 .button-circle-stroke
     flex: 0 0 48px
@@ -80,14 +85,14 @@
             fill: $neutrals4
             transition: fill .2s
     &:hover
-            background: $blue
-            box-shadow: 0 0 0 2px $blue inset
+            background: #a92e71
+            box-shadow: 0 0 0 2px #a92e71 inset
             svg
                     fill: $neutrals8
     +dark-common
         box-shadow: 0 0 0 2px $neutrals3 inset
         &:hover
-            background: $neutrals3
+            background: #A92E71
 
 .button-circle-stroke.button-small
     flex: 0 0 40px

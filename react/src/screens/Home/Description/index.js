@@ -26,24 +26,12 @@ const Description = () => {
           </div>
         </div>
         <div className={styles.gallery}>
-          <div className={styles.preview}>
-            <Image
-              srcSet="/images/content/cubes@2x.png 2x"
-              srcSetDark="/images/content/cubes-dark@2x.png 2x"
-              src="/images/content/cubes.png"
-              srcDark="/images/content/cubes-dark.png"
-              alt="Cubes"
-            />
-          </div>
-          <div className={styles.preview}>
-            <Image
-              srcSet="/images/content/cube@2x.png 2x"
-              srcSetDark="/images/content/cube-dark@2x.png 2x"
-              src="/images/content/cube.png"
-              srcDark="/images/content/cube-dark.png"
-              alt="Cube"
-            />
-          </div>
+          <Image
+            srcSet="/images/home/cryptor.png 2x"
+            src="/images/home/cryptor.png"
+            srcDark="/images/home/cryptor.png"
+            alt="chat"
+          />
         </div>
       </div>
     </div>

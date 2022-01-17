@@ -22,13 +22,12 @@ const users = [
   {
     name: "Raquel Will",
     position: "Owner",
-    avatar: "/images/content/avatar-2.jpg",
-    reward: "/images/content/reward-1.svg",
+    avatar: "/images/discover/icon-avatar-discover.svg",
   },
   {
-    name: "Selina Mayert",
-    position: "Creator",
-    avatar: "/images/content/avatar-1.jpg",
+    name: "Raquel Will",
+    position: "Owner",
+    avatar: "/images/discover/icon-avatar-discover.svg",
   },
 ];
 
@@ -56,8 +55,8 @@ const Item = () => {
                 ))}
               </div>
               <img
-                srcSet="/images/content/item-pic@2x.jpg 2x"
-                src="/images/content/item-pic.jpg"
+                srcSet="/images/ViewItem/Img_View.svg"
+                src="/images/ViewItem/Img_View.svg"
                 alt="Item"
               />
             </div>

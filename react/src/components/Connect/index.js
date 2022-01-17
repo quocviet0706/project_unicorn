@@ -14,7 +14,7 @@ const Connect = ({ className }) => {
         transaction to Ethereum network
       </div>
       <div className={styles.btns}>
-        <button className={cn("button", styles.button)}>Connect wallet</button>
+        <a className={cn("button", styles.button)} href="/connect-wallet">Connect walle</a>
         <button className={cn("button-stroke", styles.button)}>Cancel</button>
       </div>
     </div>
