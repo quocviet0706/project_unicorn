@@ -29,6 +29,14 @@ const items = [
 
 const Checkout = ({ className }) => {
   const [visibleModalPurchase, setVisibleModalPurchase] = useState(false);
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  }
+  const hide = () => {
+    // document.querySelector("body").style = "";
+    document.querySelectorAll("#modal")[0].style.display = "none";
+  }
   return (
     <>
       <div className={cn(className, styles.checkout)}>
@@ -58,10 +66,11 @@ const Checkout = ({ className }) => {
           <button className={cn("button", styles.button)}
             className={cn("button", styles.button)}
             onClick={() => setVisibleModalPurchase(true)}
+            onClick={() => {setVisibleModalPurchase(true); hide()}}
           >
             I understand, continue
           </button>
-          <button className={cn("button-stroke", styles.button)}>Cancel</button>
+          <button className={cn("button-stroke", styles.button)}  onClick={() => cancel()}>Cancel</button>
         </div>
       </div>
       <Modal
