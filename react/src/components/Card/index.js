@@ -5,6 +5,7 @@ import styles from "./Card.module.sass";
 import Icon from "../Icon";
 import Bid from "../Bid";
 import Modal from "../Modal";
+import FolowSteps from "../../screens/UploadDetails/FolowSteps_PlaceBid";
 
 const Card = ({ className, item }) => {
   const [visible, setVisible] = useState(false);

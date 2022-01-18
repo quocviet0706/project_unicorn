@@ -31,7 +31,9 @@ const Bid = ({ className }) => {
   }
   const hide = () => {
     // document.querySelector("body").style = "";
-    document.querySelectorAll("#modal")[0].style.display = "none";
+    let modal = document.querySelectorAll("#modal")[0];
+    modal.style.display = "none";
+    modal.id = "modal_1"
   }
   return (
     <>
