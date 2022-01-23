@@ -15,6 +15,8 @@ const Control = ({ className }) => {
   const [visibleModalAccept, setVisibleModalAccept] = useState(false);
   const [visibleModalSale, setVisibleModalSale] = useState(false);
 
+  //console.log(visibleModalBid)
+
   return (
     <>
       <div className={cn(styles.control, className)}>
@@ -41,7 +43,12 @@ const Control = ({ className }) => {
           </button>
           <button
             className={cn("button-stroke", styles.button)}
-            onClick={() => setVisibleModalBid(true)}
+            onClick={() => {
+              setVisibleModalBid(true);
+              setTimeout(()=>{
+                setVisibleModalBid(false);
+              },10);
+            }}
           >
             Place a bid
           </button>
@@ -57,12 +64,7 @@ const Control = ({ className }) => {
       >
         <Checkout />
       </Modal>
-      <Modal
-        visible={visibleModalBid}
-        onClose={() => setVisibleModalBid(false)}
-      >
-        <Bid />
-      </Modal>
+      <Bid showBid={visibleModalBid} />
     </>
   );
 };

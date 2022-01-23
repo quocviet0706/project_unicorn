@@ -7,7 +7,6 @@ import Flow_Steps from "../Flow_Steps";
 import Modal from "../../../../components/Modal";
 import SuccessfullyPurchased from "../SuccessfullyPurchased";
 
-
 const items = [
   {
     title: "0.007",
@@ -28,6 +27,10 @@ const items = [
 ];
 
 const Checkout = ({ className }) => {
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  };
   const [visibleModalPurchase, setVisibleModalPurchase] = useState(false);
   return (
     <>
@@ -51,17 +54,25 @@ const Checkout = ({ className }) => {
           </div>
           <div className={styles.details}>
             <div className={styles.subtitle}>This creator is not verified</div>
-            <div className={styles.text}>Purchase this item at your own risk</div>
+            <div className={styles.text}>
+              Purchase this item at your own risk
+            </div>
           </div>
         </div>
         <div className={styles.btns}>
-          <button className={cn("button", styles.button)}
+          <button
+            className={cn("button", styles.button)}
             className={cn("button", styles.button)}
             onClick={() => setVisibleModalPurchase(true)}
           >
             I understand, continue
           </button>
-          <button className={cn("button-stroke", styles.button)}>Cancel</button>
+          <button
+            className={cn("button-stroke", styles.button)}
+            onClick={() => cancel()}
+          >
+            Cancel
+          </button>
         </div>
       </div>
       <Modal

@@ -34,7 +34,12 @@ const Card = ({ className, item }) => {
             </button>
             <button
               className={cn("button-small", styles.button)}
-              onClick={() => setVisibleModalBid(true)}
+              onClick={() => {
+                setVisibleModalBid(true);
+                setTimeout(()=>{
+                setVisibleModalBid(false);
+              },10);
+              }}
             >
               <span>Place a bid</span>
             </button>
@@ -69,12 +74,7 @@ const Card = ({ className, item }) => {
           </div>
         </Link>
       </div>
-      <Modal
-        visible={visibleModalBid}
-        onClose={() => setVisibleModalBid(false)}
-      >
-        <Bid />
-      </Modal>
+      <Bid showBid={visibleModalBid} />
     </>
   );
 };
