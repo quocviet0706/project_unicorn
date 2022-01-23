@@ -73,7 +73,7 @@ const FolowSteps = ({ className }) => {
               }
               onClick={() => setapprove(true)}
             >
-              Start now
+              Done
             </button>
           ) : (
             <button
