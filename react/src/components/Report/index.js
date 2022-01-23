@@ -4,6 +4,10 @@ import styles from "./Report.module.sass";
 import TextArea from "../TextArea";
 
 const Report = ({ className }) => {
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  };
   return (
     <div className={cn(className, styles.transfer)}>
       <div className={cn("h4", styles.title)}>Report</div>
@@ -19,7 +23,7 @@ const Report = ({ className }) => {
       />
       <div className={styles.btns}>
         <button className={cn("button", styles.button)}>Send now</button>
-        <button className={cn("button-stroke", styles.button)}>Cancel</button>
+        <button className={cn("button-stroke", styles.button)}onClick={() => cancel()}>Cancel</button>
       </div>
     </div>
   );

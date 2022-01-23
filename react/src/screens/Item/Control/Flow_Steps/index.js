@@ -8,6 +8,10 @@ import SuccessfullyPurchased from "../SuccessfullyPurchased";
 
 const Flow_Steps = ({ className }) => {
     const [visibleModalFlowSteps, setVisibleModalFlowSteps] = useState(false);
+    const cancel = () => {
+        document.querySelector("body").style = "";
+        document.querySelector("#modal").style.display = "none";
+      };
     return (
         <>
             <div className={cn(className, styles.flow_steps)}>
@@ -42,7 +46,7 @@ const Flow_Steps = ({ className }) => {
                     >
                         I understand, continue
                     </button>
-                    <button className={cn("button-stroke", styles.button)}>Cancel</button>
+                    <button className={cn("button-stroke", styles.button)} onClick={() => cancel()}>Cancel</button>
                 </div>
             </div>
             <Modal

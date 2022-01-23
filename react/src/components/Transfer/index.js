@@ -3,6 +3,10 @@ import cn from "classnames";
 import styles from "./Transfer.module.sass";
 
 const Transfer = ({ className }) => {
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  };
   return (
     <div className={cn(className, styles.transfer)}>
       <div className={cn("h4", styles.title)}>Transfer token</div>
@@ -20,7 +24,7 @@ const Transfer = ({ className }) => {
       </div>
       <div className={styles.btns}>
         <button className={cn("button", styles.button)}>Continue</button>
-        <button className={cn("button-stroke", styles.button)}>Cancel</button>
+        <button className={cn("button-stroke", styles.button)}onClick={() => cancel()}>Cancel</button>
       </div>
     </div>
   );
