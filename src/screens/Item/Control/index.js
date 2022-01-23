@@ -8,6 +8,7 @@ import PutSale from "./PutSale";
 import SuccessfullyPurchased from "./SuccessfullyPurchased";
 import Modal from "../../../components/Modal";
 import FolowSteps from "../../../screens/UploadDetails/FolowSteps";
+import Purchase from "../../../components/Purchase";
 
 const Control = ({ className }) => {
   const [visibleModalPurchase, setVisibleModalPurchase] = useState(false);
@@ -37,7 +38,12 @@ const Control = ({ className }) => {
         <div className={styles.btns}>
           <button
             className={cn("button", styles.button)}
-            onClick={() => setVisibleModalPurchase(true)}
+            onClick={() => {
+              setVisibleModalPurchase(true);
+              setTimeout(()=>{
+                setVisibleModalPurchase(false);
+              },1000);
+            }}
           >
             Purchase now
           </button>
@@ -62,9 +68,9 @@ const Control = ({ className }) => {
         visible={visibleModalPurchase}
         onClose={() => setVisibleModalPurchase(false)}
       >
-        <Checkout />
       </Modal>
       <Bid showBid={visibleModalBid} />
+      <Purchase showPurchase={visibleModalPurchase} />
     </>
   );
 };

@@ -3,6 +3,10 @@ import cn from "classnames";
 import styles from "./Burn.module.sass";
 
 const Burn = ({ className }) => {
+  const cancel = () => {
+    document.querySelector("body").style = "";
+    document.querySelector("#modal").style.display = "none";
+  };
   return (
     <div className={cn(className, styles.transfer)}>
       <div className={cn("h4", styles.title)}>Burn token</div>
@@ -12,7 +16,7 @@ const Burn = ({ className }) => {
       </div>
       <div className={styles.btns}>
         <button className={cn("button-pink", styles.button)}>Continue</button>
-        <button className={cn("button-stroke", styles.button)}>Cancel</button>
+        <button className={cn("button-stroke", styles.button)} onClick={() => cancel()}>Cancel</button>
       </div>
     </div>
   );
